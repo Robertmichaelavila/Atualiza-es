@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../School Lab UFC/figmaSchoolLab/icone.jpg">
+    <title>School Lab UFC</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+        <div class="menu">
+            <img id="logo" src="../School Lab UFC/figmaSchoolLab/brasao2_vertical_cor_72dpi.png" alt="logo UFC" width="120" height="85">
+        </div>
+        <div class="nav">
+            <a href="" style="padding:10px 0px 10px 0px;"><strong>Perfil</strong></a>
+            <a href="" style="padding:10px 0px 10px 0px;"><strong>Histórico</strong></a>
+        </div><br>
+        <section class="text">
+            <p>Olá! Seja bem vindo ao SCHOOL LAB UFC, aqui você poderá requisitar o uso dos computadores dos laboratóros da Universidade. O site tem uma usabilidade simples para que todos possam acessar as funções disponiveis sem nenhum problema.</p>
+            <p>Nos ajude com sua opnião quanto a usabilidade e eficiência do site para que possamos ter um feedback, dessa forma traremos atualizações e melhorias. Acesse o link que colocamos no final da página, preencha o formulário com as informações que desejar.</p>
+        </section><hr><br>
+        <div class="titulo">
+            <h3>Selecione uma das salas: </h3>
+        </div>
+        <div class="telas">
+            <img id="lab1" src="../School Lab UFC/figmaSchoolLab/lab.png" alt="" width="160" height="140" onclick="mudarpagina1()">
+            <img id="lab2" src="../School Lab UFC/figmaSchoolLab/lab.png" alt="" width="160" height="140" onclick="mudarpagina2()">
+            <img id="lab3" src="../School Lab UFC/figmaSchoolLab/lab.png" alt="" width="160" height="140" onclick="mudarpagina3()">
+            <img id="lab4" src="../School Lab UFC/figmaSchoolLab/lab.png" alt="" width="160" height="140" onclick="mudarpagina4()">
+            <img id="lab5" src="../School Lab UFC/figmaSchoolLab/lab.png" alt="" width="160" height="140" onclick="mudarpagina5()">
+        </div><br><hr><br><br><br>
+    <div class="container">
+            <div class="col-1">
+                <p><strong>Desenvolvedores:</strong></p>
+                <ul>
+                    <li>Robert Michael</li>
+                    <li>Jônatas Fernandes</li>
+                    <li>Gustavo Menezes</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h3>&copy;School Lab UFC</h3>
+            </div>
+            <div class="col-3">
+                <p><strong>Contatos:</strong></p>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Whatsaapp</li>
+                    <li><a href="" style="color: #fff;">Formulário</a></li>
+                </ul>
+            </div>
+        </div>
+    <script>
+        function funcaoperfil(){
+            window.location.href = 'login.html'
+        }
+        var img1 = document.getElementById('lab1');
+        var img2 = document.getElementById('lab2');
+        var img3 = document.getElementById('lab3');
+        var img4 = document.getElementById('lab4');
+        function mudarpagina1(){
+            img1 = window.location.href = 'Lab1.html' 
+        }
+        function mudarpagina2(){
+            img2 = window.location.href = 'Lab2.html' 
+        }
+        function mudarpagina3(){
+            img3 = window.location.href = 'Lab3.html'  
+        }
+        function mudarpagina4(){
+            img4 = window.location.href = 'Lab4.html'  
+        }
+    </script>
+</body>
+</html>
