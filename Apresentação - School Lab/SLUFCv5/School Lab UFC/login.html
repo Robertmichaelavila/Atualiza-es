@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../School Lab UFC/figmaSchoolLab/icone.jpg">
     <title>School Lab UFC</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="sty.css">
 </head>
 <body>
-    <div class="container">
     <div class="caixa">
         <h1>Seja bem vindo!</h1>
-        <p id="email">Email <input id="email1"type="email" placeholder="Digite seu email institucional" maxlength="50" size="65"></p>
-        <p id="senha">Senha <input id="senha1" type="password" placeholder="Digite sua senha" maxlength="8" size="65"></p>
-        <button id="but">Entrar</button>
-         <button id="but" onclick="paginacadastro()">Fazer cadastro</button>
+        <input id="email1"type="email" placeholder="Email" maxlength="30" size="40"><br>
+        <input id="senha1" type="password" placeholder="Senha" maxlength="8" size="40"><br>
+        <button id="but" onclick="paginaaluno()">Entrar</button>
+         <button id="but" onclick="paginacadastro()">Cadastrar</button>
         <p id="logo">&copy;School Lab</p>
     </div>
     <script>
         function paginacadastro(){
             window.location.href = 'cadastro.html'
+        }
+        function paginaaluno(){
+            window.location.href = 'home.html'
         }
     </script>
 </body>
